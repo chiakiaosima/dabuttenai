@@ -20,5 +20,5 @@
 | user                  | references     | null: false, unique: true |
 
 ### Association
-
+　
 - belongs_to :user
