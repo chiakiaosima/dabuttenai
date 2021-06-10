@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: dabuttenai_production
-  username: dabuttenai
-  password: <%= ENV['DABUTTENAI_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
