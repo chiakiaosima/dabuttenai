@@ -1,3 +1,4 @@
+
 <h1>ダブってない？</h1>
 <ul class='lists-right'>
   <% if user_signed_in? %>
@@ -8,4 +9,4 @@
     <li><%= link_to '新規登録',new_user_registration_path, class: "sign-up" %></li>
   <% end %>
 </ul>
-<%= link_to "最終確認用ボタン", "#", class: "btn btn-primary" %>
+<%= link_to "本のバーコードをスキャンする", "#", class: "btn btn-primary" %>
