@@ -5,26 +5,26 @@
 
   <div class="field">
     <div class='form-text-wrap'>
-      <label class="form-text">ニックネーム</label>
+      <label class="form-text">名前を入力</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_area :nick_name, class:"input-default", id:"nickname", placeholder:"例) furima太郎", maxlength:"20", autofocus: true %>
+    <%= f.text_area :nick_name, class:"input-default", id:"nickname", placeholder:"例）田中 智", maxlength:"20", autofocus: true %>
   </div>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :パスワード %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(<%= @minimum_password_length %>文字以上で英字と数字の両方を含めて設定してください)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :確認のためパスワードをもう一度入力してください %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
